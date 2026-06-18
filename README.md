@@ -1,4 +1,4 @@
-# farazsms/sdk
+# farazsms/php
 
 **FarazSMS · IranPayamak** — فراز اس ام اس · ایران پیامک
 🌐 [farazsms.com](https://farazsms.com) · [iranpayamak.com](https://iranpayamak.com)
@@ -10,7 +10,7 @@ PHP 7.4+ · PSR-4 · throws on API errors.
 ## Install
 
 ```bash
-composer require farazsms/sdk
+composer require farazsms/php
 ```
 
 ## Quick start
