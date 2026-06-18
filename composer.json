@@ -1,0 +1,24 @@
+{
+  "name": "farazsms/sdk",
+  "description": "Official client for FarazSMS · IranPayamak (فراز اس ام اس · ایران پیامک) — https://farazsms.com. Send pattern/OTP, bulk SMS, reports, phonebook, and all 63 endpoints.",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://farazsms.com",
+  "keywords": ["farazsms", "iranpayamak", "sms", "otp", "pattern", "iran", "فراز اس ام اس", "ایران پیامک", "پیامک"],
+  "authors": [
+    { "name": "FarazSMS (فراز اس ام اس)", "homepage": "https://farazsms.com" }
+  ],
+  "support": {
+    "docs": "https://farazsms.com",
+    "source": "https://gitlab.faraz.club/common-service-centres/api-docs"
+  },
+  "require": {
+    "php": ">=7.4",
+    "ext-json": "*",
+    "guzzlehttp/guzzle": "^7.0"
+  },
+  "autoload": {
+    "psr-4": { "FarazSMS\\": "src/" }
+  },
+  "minimum-stability": "stable"
+}
