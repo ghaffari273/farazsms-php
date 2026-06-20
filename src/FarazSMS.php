@@ -76,6 +76,17 @@ class FarazSMS
         ]);
     }
 
+    /**
+     * One-line OTP — sends a code via your approved pattern. Generates a 5-digit
+     * code if $token is null, and returns the code that was sent (store it to verify).
+     */
+    public function sendOtp($recipient, $pattern, $token = null, $varName = "code", $line = "90008361")
+    {
+        $token = (string) ($token === null ? random_int(10000, 99999) : $token);
+        $this->sendPattern($pattern, $recipient, [$varName => $token], $line);
+        return $token;
+    }
+
     // patterns
     public function createPattern(array $payload)  { return $this->request("POST", "/ws/v1/patterns", $payload); }
     public function patterns(array $query = [])    { return $this->request("GET", "/ws/v1/patterns", null, $query); }
